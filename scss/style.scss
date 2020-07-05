@@ -15,13 +15,25 @@ $text-color: #262626;
 }
 body{
 	@include regular;
-	background-color: #cecece;
 }
-
+.button{
+		color: #fff;
+		border: none;
+		background-color: #507fe1;
+		padding: 25px 45px;
+    	text-transform: uppercase;
+    	@include bold;
+		}
 // === Шапка сайта
 
 .navbar{
+	z-index: 99;
+/*	position: fixed;*/
+	left: 0;
+	top: 0;
+	width: 100%;
 	background-color: #fff;
+
 	&_wrapper{
 		display: flex;
 		align-items: center;
@@ -54,6 +66,32 @@ body{
     	text-transform: uppercase;
 	}
 	.menu{
+		z-index: 0;
+		width: 100%;
+		position: fixed;
+		top: 80px;
+		padding: 16px 0;
+		background-color: #507fe1;
+
+/*		transition: 0.2s;
+		transform: translateY(10%);*/
+
+/*		&_active{
+			transform: translateY(0%);
+		}*/
+
+		&__link{
+			text-decoration: none;
+			font-size: 17px;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		&__nav{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+
+		}
 		&-btn{
 			display: flex;
 			flex-direction: column;
@@ -96,3 +134,24 @@ body{
 }
 
 // ===// Шапка сайта
+
+// === Hero
+.hero{
+	background: #f1f1f1 url('../img/bg.jpg') no-repeat center;
+	background-size: cover;
+	padding-top: 120px;
+	padding-bottom: 270px;	
+
+	&__title{
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+	&__subtitle{
+		display: block;
+		@include bold;
+		font-size: 30px;
+		margin-bottom: 67px;
+	}
+
+}
+// ===// Hero
