@@ -478,6 +478,28 @@ input[type=checkbox]:checked + label:before {
     margin-bottom: 20px;
   }
 }
+.feature-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.feature-block__item {
+  flex-basis: 33%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 991px) {
+  .feature-block__item {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .feature-block__item {
+    flex-basis: 100%;
+  }
+}
 body {
   font-family: "Proxima Nova Regular", sans-serif;
 }
@@ -495,6 +517,28 @@ body {
   font-family: "Proxima Nova Semibold", sans-serif;
 }
 
+.section {
+  padding: 100px 0;
+}
+.section-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+.section__title {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+}
 .menu {
   z-index: 0;
   width: 100%;

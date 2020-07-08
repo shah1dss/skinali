@@ -1,9 +1,16 @@
 @import '_fonts.scss';
 @import 'normalize.scss';
 @import '_grid.scss';
+
 // === Подключение Section Offer === ///
 @import '_offer.scss';
 // === //Подключение Section Offer === ///
+
+// === Подключение Section feature === ///
+@import '_feature.scss';
+// === //Подключение Section feature === ///
+
+
 // === Color
 $text-color: #262626;
 $bg-secondary: #f1f1f1;
@@ -23,6 +30,28 @@ body{
     	text-transform: uppercase;
     	@include bold;
 		}
+.section{
+	padding: 100px 0;
+	&-title{
+	text-transform: uppercase;
+	font-size: 30px;
+	display: block;
+	text-align: center;
+	@include bold;
+	}
+	&__title{
+	margin-bottom: 100px;
+	}
+}
+@media(max-width: 576px){
+	.section{
+		padding: 60px 0;
+		&-title{
+			font-size: 24px;
+		}
+	}
+}
+
 // === Шапка сайта
 	.menu{
 		z-index: 0;
