@@ -10,6 +10,10 @@
 @import '_feature.scss';
 // === //Подключение Section feature === ///
 
+// === Подключение Section catalog === ///
+@import '_catalog.scss';
+// === //Подключение Section catalog === ///
+
 
 // === Color
 $text-color: #262626;
@@ -29,6 +33,25 @@ body{
 		padding: 25px 45px;
     	text-transform: uppercase;
     	@include bold;
+			
+			&-card{
+				&__buttons{
+				border: none;
+				padding: 10px;
+	    		height: 30px;
+	    		font-size: 12px;
+	    		text-transform: uppercase;
+	    		}
+			}
+	    	&-fitting{
+	    		color:#507fe1;
+	    		background-color: #fff;
+
+	    	}
+	    	&-add{
+	    		color:#fff;
+	    		background-color: lighten(#507fe1,10%);
+	    	}
 		}
 .section{
 	padding: 100px 0;

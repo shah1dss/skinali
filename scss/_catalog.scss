@@ -1,0 +1,24 @@
+.catalog{
+	&-block{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-card{
+		max-width: 570px;
+		margin-bottom: 25px;
+		position: relative;
+		&__buttons{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		&__tag{
+			text-transform: uppercase;
+			background-color: lighten(#507fe1,10%);
+			color:#fff;
+			padding: 7px;
+			font-size: 12px;
+		}
+	}
+}
