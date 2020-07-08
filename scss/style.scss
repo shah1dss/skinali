@@ -1,12 +1,19 @@
 @import '_fonts.scss';
 @import 'normalize.scss';
 @import '_grid.scss';
+// === Подключение Section Offer === ///
+@import '_offer.scss';
+// === //Подключение Section Offer === ///
 // === Color
 $text-color: #262626;
+$bg-secondary: #f1f1f1;
 // //=== Color
 
 body{
 	@include regular;
+}
+.bg-secondary{
+	background-color: $bg-secondary;
 }
 .button{
 		color: #fff;
