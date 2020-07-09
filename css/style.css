@@ -501,16 +501,21 @@ input[type=checkbox]:checked + label:before {
   }
 }
 .catalog-block {
+  z-index: 99;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.catalog__card {
+  margin-bottom: 30px;
+}
 .catalog-card {
   max-width: 570px;
-  margin-bottom: 25px;
   position: relative;
+  box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.2);
 }
 .catalog-card__buttons {
+  display: flex;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -521,10 +526,39 @@ input[type=checkbox]:checked + label:before {
   color: #fff;
   padding: 7px;
   font-size: 12px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.catalog-card__img {
+  display: block;
+}
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.catalog__link-description {
+  display: block;
 }
 
+@media (max-width: 1199px) {
+  .catalog-block {
+    justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
+  }
+}
 body {
   font-family: "Proxima Nova Regular", sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 .bg-secondary {
@@ -532,6 +566,7 @@ body {
 }
 
 .button {
+  text-decoration: none;
   color: #fff;
   border: none;
   background-color: #507fe1;
@@ -553,6 +588,14 @@ body {
 .button-add {
   color: #fff;
   background-color: #7c9fe8;
+}
+.button-like {
+  border: none;
+  background-color: #507fe1;
+  height: 30px;
+}
+.button_lg {
+  width: 450px;
 }
 
 .section {

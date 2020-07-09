@@ -23,10 +23,14 @@ $bg-secondary: #f1f1f1;
 body{
 	@include regular;
 }
+img{
+	max-width: 100%;
+}
 .bg-secondary{
 	background-color: $bg-secondary;
 }
 .button{
+		text-decoration: none;
 		color: #fff;
 		border: none;
 		background-color: #507fe1;
@@ -52,6 +56,14 @@ body{
 	    		color:#fff;
 	    		background-color: lighten(#507fe1,10%);
 	    	}
+	    	&-like{
+	    		border: none;
+	    		background-color:#507fe1;
+	    		height: 30px;
+	    	}
+		&_lg{
+			width: 450px;
+		}
 		}
 .section{
 	padding: 100px 0;
