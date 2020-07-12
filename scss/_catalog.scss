@@ -12,11 +12,21 @@
 		max-width: 570px;
 		position: relative;
 		box-shadow: 7px 5px 21px rgba(0,0,0, 0.2);
+			&:hover{
+				.catalog{
+					&-card{
+						&__buttons{
+							opacity:1;
+						}
+					}
+				}
+			}
 		&__buttons{
 			display: flex;
 			position: absolute;
 			bottom: 0;
 			right: 0;
+			opacity: 0;
 		}
 		&__tag{
 			text-transform: uppercase;

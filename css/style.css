@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Proxima Nova Semibold";
-  src: url("../fonts/ProximaNova-Semibold.eot");
-  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-family: "Proxima Nova Bold";
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -415,7 +415,7 @@ input[type=checkbox]:checked + label:before {
 .offer-block__title {
   font-size: 25px;
   text-transform: uppercase;
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
   margin-bottom: 10px;
 }
 .offer-block__subtitle {
@@ -514,11 +514,15 @@ input[type=checkbox]:checked + label:before {
   position: relative;
   box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.2);
 }
+.catalog-card:hover .catalog-card__buttons {
+  opacity: 1;
+}
 .catalog-card__buttons {
   display: flex;
   position: absolute;
   bottom: 0;
   right: 0;
+  opacity: 0;
 }
 .catalog-card__tag {
   text-transform: uppercase;
@@ -560,7 +564,7 @@ input[type=checkbox]:checked + label:before {
 }
 .blog-header__header {
   font-size: 24px;
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
 }
 .blog-header__learn-more {
   color: #507fe1;
@@ -605,6 +609,54 @@ input[type=checkbox]:checked + label:before {
     margin-left: 15px;
   }
 }
+.price-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.price-blog__title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  min-height: 60px;
+  padding: 15px;
+}
+.price-blog__title .text {
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 15px;
+}
+.price-blog__card {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+  position: relative;
+  background-color: #fff;
+}
+.price-blog__card:hover .price-blog__button {
+  z-index: 99;
+  opacity: 1;
+}
+.price-blog__button {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  transform: translateY(90px);
+  opacity: 0;
+}
+
+@media (max-width: 1190px) {
+  .price-blog {
+    justify-content: space-around;
+  }
+}
 body {
   font-family: "Proxima Nova Regular", sans-serif;
 }
@@ -624,7 +676,7 @@ img {
   background-color: #507fe1;
   padding: 25px 45px;
   text-transform: uppercase;
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
 }
 .button-card__buttons {
   border: none;
@@ -650,6 +702,11 @@ img {
   width: 450px;
 }
 
+@media (max-width: 470px) {
+  .button_lg {
+    width: 300px;
+  }
+}
 .section {
   padding: 100px 0;
 }
@@ -658,7 +715,7 @@ img {
   font-size: 30px;
   display: block;
   text-align: center;
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
 }
 .section__title {
   margin-bottom: 100px;
@@ -718,6 +775,7 @@ img {
 }
 
 .navbar {
+  z-index: 1000;
   position: fixed;
   left: 0;
   top: 0;
@@ -735,7 +793,7 @@ img {
   text-align: right;
 }
 .navbar__phone {
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
   font-size: 19px;
   display: block;
   text-decoration: none;
@@ -764,7 +822,7 @@ img {
   font-size: 18px;
   text-transform: uppercase;
   display: block;
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
   margin-bottom: 5px;
 }
 .navbar .logo__discription {
@@ -813,7 +871,7 @@ img {
 }
 .hero__subtitle {
   display: block;
-  font-family: "Proxima Nova Semibold", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
   font-size: 30px;
   margin-bottom: 67px;
 }

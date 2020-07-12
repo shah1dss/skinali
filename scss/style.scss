@@ -18,6 +18,10 @@
 @import '_blog.scss';
 // === //Подключение Section blog === ///
 
+// === Подключение Section kinds === ///
+@import '_kinds.scss';
+// === //Подключение Section kinds === ///
+
 
 // === Color
 $text-color: #262626;
@@ -69,6 +73,13 @@ img{
 			width: 450px;
 		}
 		}
+@media (max-width: 470px){
+	.button{
+		&_lg{
+			width: 300px
+		}
+	}
+}
 .section{
 	padding: 100px 0;
 	&-title{
@@ -143,6 +154,7 @@ img{
 		}
 	}
 .navbar{
+	z-index: 1000;
 	position: fixed;
 	left: 0;
 	top: 0;
