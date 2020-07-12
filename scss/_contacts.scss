@@ -1,0 +1,19 @@
+.contacts{
+	&__block{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
+	&__img{
+		display: block;
+		height: 30px;
+		margin: 0 auto;
+		margin-bottom: 25px;
+	}
+	&__span{
+	}
+}
+.map{
+	margin-top: 50px;
+}

@@ -22,6 +22,14 @@
 @import '_kinds.scss';
 // === //Подключение Section kinds === ///
 
+// === Подключение Section slider-block === ///
+@import '_slider-block.scss';
+// === //Подключение Section slider-block === ///
+
+// === Подключение Section _contacts block === ///
+@import '_contacts.scss';
+// === //Подключение Section _contacts block === ///
+
 
 // === Color
 $text-color: #262626;

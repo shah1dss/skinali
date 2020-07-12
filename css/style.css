@@ -657,6 +657,58 @@ input[type=checkbox]:checked + label:before {
     justify-content: space-around;
   }
 }
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+.slider__item {
+  text-align: center;
+}
+.slider__img {
+  display: block;
+  height: 70px;
+  width: 70px;
+  border: 2px solid #6a99e9;
+  border-radius: 100%;
+  margin: 20px auto;
+}
+.slider__text {
+  font-style: italic;
+  font-size: 15px;
+  background-color: #fff;
+  maw-width: 370px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.slider__text:after {
+  content: "";
+  height: 20px;
+  border: 10px solid transparent;
+  border-top: 10px solid #fff;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-10px);
+}
+
+.contacts__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.contacts__img {
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.map {
+  margin-top: 50px;
+}
+
 body {
   font-family: "Proxima Nova Regular", sans-serif;
 }
