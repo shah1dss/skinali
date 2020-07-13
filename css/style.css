@@ -722,36 +722,47 @@ input[type=checkbox]:checked + label:before {
   justify-content: space-between;
   align-items: center;
 }
-.footer__title {
+
+.block-description__title {
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
   font-family: "Proxima Nova Bold", sans-serif;
 }
-.footer__subtitle {
+.block-description__subtitle {
   color: #fff;
   display: block;
   margin-bottom: 20px;
 }
-.footer__copyright {
+.block-description__copyright {
   color: grey;
 }
-.footer__img {
+.block-pay__img {
   margin-left: 15px;
 }
-.footer__phone {
+.block-contacts {
+  text-align: right;
+}
+.block-contacts__phone {
   display: block;
   margin-bottom: 10px;
 }
-.footer__mail {
+.block-contacts__mail {
   display: block;
   margin-bottom: 20px;
 }
 
-.block__contacts {
-  text-align: right;
-}
+@media (max-width: 776px) {
+  .footer-block {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 
+  .block__contacts, .block__pay {
+    margin-top: 10px;
+  }
+}
 body {
   font-family: "Proxima Nova Regular", sans-serif;
 }
