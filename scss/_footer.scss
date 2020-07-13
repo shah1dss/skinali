@@ -1,0 +1,41 @@
+.footer{
+	padding: 40px 0;
+	background-color: #262626;
+	a{
+		color:#fff;
+		text-decoration: none;
+	}
+	&-block{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__title{
+		color: #fff;
+		font-size: 18px;
+		text-transform: uppercase;
+		@include bold;
+	}
+	&__subtitle{
+		color: #fff;
+		display: block;
+		margin-bottom: 20px;
+	}
+	&__copyright{
+		color: grey;
+	}
+	&__img{
+		margin-left: 15px;
+	}
+	&__phone{
+		display: block;
+		margin-bottom: 10px;
+	}
+	&__mail{
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+.block__contacts{
+	text-align: right;
+}
