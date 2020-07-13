@@ -445,6 +445,8 @@ input[type=checkbox]:checked + label:before {
   width: 100%;
   border: 1px solid #ddd;
   border-right: none;
+  outline: none;
+  padding: 20px;
 }
 .offer .form__input:last-child {
   border-right: 1px solid #ddd;
@@ -784,6 +786,9 @@ img {
   text-transform: uppercase;
   font-family: "Proxima Nova Bold", sans-serif;
 }
+.button:hover {
+  cursor: pointer;
+}
 .button-card__buttons {
   border: none;
   padding: 10px;
@@ -871,6 +876,12 @@ img {
   border-right: 1px solid rgba(81, 11, 186, 0.1);
   border-left: 1px solid rgba(81, 11, 186, 0.1);
   width: 70px;
+}
+.menu-btn:hover {
+  cursor: pointer;
+}
+.menu-btn:focus {
+  outline: none;
 }
 .menu-btn__line {
   display: block;
@@ -962,6 +973,11 @@ img {
   }
   .menu__link {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .menu__link {
+    font-size: 14px;
   }
 }
 .hero {

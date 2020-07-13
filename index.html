@@ -10,7 +10,7 @@
 <body>
 
 <header class="header">
-				<div class="menu ">
+				<div class="menu">
 				<div class="container">
 					<nav class="menu__nav">
 						<a href="#" class="menu__link">Главная</a>
@@ -72,8 +72,12 @@
 					<form action="#" class="offer__form">
 						<div class="form__row">
 							<div class="form__group">
-								<label for="" class="form__label">Вид стекла</label>
-								<input type="text" class="form__input">
+								<label class="form__label">Вид стекла</label>
+								<select name="select" id="" class="form__input">
+									<option value="Обычное стекло">Обычное стекло</option>
+									<option value="Осветленное стекло">Осветленное стекло</option>
+									<option value="Зеркало">Зеркало</option>
+								</select>
 							</div>
 							<div class="form__group">
 								<label for="" class="form__label">Ширина, см</label>
@@ -449,6 +453,10 @@
 		</div>
 	</div>
 </footer>	
-
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

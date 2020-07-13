@@ -54,6 +54,9 @@ img{
 		background-color: #507fe1;
 		padding: 25px 45px;
     	text-transform: uppercase;
+    	&:hover{
+    		cursor:pointer;
+    	}
     	@include bold;
 			
 			&-card{
@@ -153,6 +156,12 @@ img{
 			border-right: 1px solid rgba(81, 11, 186, 0.1);
 			border-left: 1px solid rgba(81, 11, 186, 0.1);
 			width: 70px;
+			&:hover{
+				cursor:pointer;
+			}
+			&:focus{
+				outline:none;
+			}
 
 			&__line{
 				display: block;
@@ -252,6 +261,13 @@ img{
 		}
 		&__link{
 			margin-bottom: 20px;
+		}
+	}
+}
+@media(max-width: 650px){
+	.menu{
+		&__link{
+			font-size: 14px;	
 		}
 	}
 }

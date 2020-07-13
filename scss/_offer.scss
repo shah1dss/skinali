@@ -66,6 +66,8 @@ input[type='checkbox']{
 			width: 100%;
 			border: 1px solid #ddd;
 			border-right: none;
+			outline: none;
+			padding: 20px;
 			&:last-child{
 				border-right:1px solid #ddd;
 			}
